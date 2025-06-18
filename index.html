@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
     <title>Three-Twenty Timer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Three-Twenty Timer App</h1>
+      <div class="timer"><h2 class="timer-text" id="timer-display"></h2></div>
+      <div class="buttons-box">
+        <i class="material-icons md-48" id="play" onclick="handlePlay()">play_arrow</i>
+        <i class="material-icons md-48" id="pause" onclick="handlePause()">pause</i>
+        <i class="material-icons md-48" id="restart" onclick="handleRestart()">refresh</i>
+      </div>
+    </header>
+    <script src="script.js"></script>
     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-        }
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
     </script>
-</body>
+  </body>
 </html>
