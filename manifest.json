@@ -1,0 +1,10 @@
+{
+    "name": "Three-Twenty Timer",
+    "short-name": "TTT",
+    "start_url": "/?home=true",
+    "icons": [],
+    "theme_color": "#000000",
+    "background_color": "#FFFFFF",
+    "display": "fullscreen",
+    "orientation": "portrait"
+}
